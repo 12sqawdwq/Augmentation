@@ -75,7 +75,8 @@ for filename in os.listdir(source_image_dir):
         with open(label_path, 'r') as f:
             labels = f.read().splitlines()
 
-        # 读取标签并进行相同的转换操作
+        # 读取标签并进行相同的转
+        # 标签坐标变化随图片变化未能成功实现需要进行修改2025/1/10
         new_labels = []
         for label in labels:
             cl, x_centre, y_centre, w, h = label.split(' ')
